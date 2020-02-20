@@ -4,7 +4,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 default_profile='profile_images/shailesh.png'
-default_cover='cover_images/kajal.png'
+default_cover='cover_images/492792.png'
 
 class Profile(models.Model):
 	user = models.OneToOneField(User, on_delete = models.CASCADE, primary_key=True, default=True)
