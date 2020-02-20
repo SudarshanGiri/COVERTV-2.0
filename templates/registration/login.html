@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="container" style="height: 100%;">
+  
+  <div class="container" style=" text-align: center; color:white !important;font-size: 30px;margin: 50px auto;">MASS  </div>
+    <div class="row">
+      <div style="background-image: url(https://pngimg.com/uploads/anonymous_mask/anonymous_mask_PNG31.png);width:300px; height: 300px;background-size: cover;position: fixed;" ></div> 
+        <div class="col-5 mx-auto "  >
+            <div class="card card-body " style="background-color: #0003;border: none;color: white;">
+              <form method="post" class="mx-auto" role="form">
+                {% csrf_token %}
+                <div class="form-group" >
+                  <h1 class="text-center mt-auto" style="font-size: 20px;"><i class="far fa-user" style="font-size: 40px;margin: 20px;"></i>  LOGIN</h1>
+
+                  <input type="hidden" name="next" value="{{ next }}" />                              
+              
+                    {% for field in form %}
+
+                      <label>{{ field.label_tag }}</label>
+
+                      <input class="form-control" type="{{ field.field.widget.input_type }}" name="{{ field.name }}" id="id_{{ field.name }}" >
+
+                   
+                    {% for error in field.errors %}
+                      <p style="color: red">{{ error }}</p>
+                    {% endfor %}
+
+                    {% if field.help_text %}
+                      <p><small style="color: grey">{{ field.help_text }}</small></p>
+                    {% endif %}
+                    {% endfor %}
+
+                </div>
+                
+                <button class="btn btn-outline-info mx-auto" type="submit" style="color: white;" >Log in</button>
+                <a  href="{% url 'signup' %}" style="color: white;">New to My Site? Sign up</a>
+              </form> 
+            </div>  
+        </div>
+    </div>
+    
+</div>
+
+
+      
+
+  
+{% endblock %}
