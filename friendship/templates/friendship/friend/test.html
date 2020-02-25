@@ -1,15 +1,14 @@
-
 {% extends 'chat/final.html' %}
 {% block friend %}
-<div  style=" position:relative; height:600px; top:-83px; background-color:#EEE; outline:1px solid #EEE;">
+<div  style=" position:relative; height:600px; top:-85px;  background-size:cover ; outline:1px solid #EEE;">
         
             <div class="prep-classes-contents">
-    <div id="here" class="container-fluid">
+    <div id="here" class="container-fluid" >
        <!--  {% include "friendship/friend/testfirst.html" %} -->
 
 <div class="row prep-classes-tabs">
-            <div class="col-md-4 col-sm-4">
-                <ul class="nav nav-tabs nav-stacked" role="tablist" id="myTab">
+            <div class="col-md-3 col-sm-4">
+                <ul class="nav nav-tabs nav-stacked" role="tablist" id="myTab" style="color:white !important;">
                     <li id="rr"><a data-toggle="tab" href="#received-requests">Received Friend Requests</a></li>
                     <li id="sfr"><a data-toggle="tab" href="#sent-requests">Sent Friend Requests</a></li>
                     <li style="width:200px;" id="fi"><a data-toggle="tab" href="#friends">Friends</a></li>
@@ -75,7 +74,7 @@
                                     <img src="default-user.png" alt="">
                                 </div>
                                 <div class="noti-details pull-left">
-                                    <div class="classes-details-title"> <a href="{% url 'view_profile' friend.username %}">{{friend.username}}</a></div>
+                                    <div class="classes-details-title" style="width: 150px;"> <a href="{% url 'view_profile' friend.username %}">{{friend.username}}</a></div>
                                 </div>
                                 <div class="noti-details-btns pull-right text-center">
                             <span><a href="{% url 'friendship_remove_friend'  friend.username %}"><button
@@ -87,7 +86,7 @@
                         </ul>
                     </div>
 
-                    <div id="other-people" class="tab-pane " style="height:300px; overflow-y: scroll;">
+                    <div id="other-people" class="tab-pane " style="height:500px; overflow-y: scroll;">
                         <ul class="classes">
                             {% for user in usering %}
                             {% if user not in friends %}
@@ -97,14 +96,14 @@
                                 <div class="classes-image pull-left">
                                     <img src="default-user.png" alt="">
                                 </div>
-                                <div class="noti-details pull-left">
+                                <div class="noti-details pull-left" style="width: 150px;">
                                     <div class="classes-details-title"><a href="{% url 'view_profile' user.username %}">{{ user.username }}</a></div>
 
                                 </div>
                                 <div class="noti-details-btns pull-right text-center">
 
                                     <span><a href="{% url 'friendship_add_friend' user.username %}"><button
-                                            type="button" class="btn btn-success"> Add Friend</button></a></span>
+                                            type="button" class="btn btn-success" style="margin: auto;"> Add Friend</button></a></span>
 
                                 </div>
                             </li>
