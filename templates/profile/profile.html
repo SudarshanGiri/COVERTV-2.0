@@ -19,7 +19,7 @@
 
 			<div class="card img-responsive d-block w-25 " style="border-radius: 100%; width:200px !important; position:absolute; top:168px; left:15px;background-color:transparent;">
 				
-				<img class="card-img " style="border-radius: 100%; width:200px; box-shadow: 0px 0px 40px #f007; height:200px; background-size: cover;" src="{{ userr.profile.profile_pic.url }}">		
+				<img class="card-img " style="border-radius: 100%; width:200px;border: 5px solid white; box-shadow: 0px 0px 40px #f007; height:200px; background-size: cover;" src="{{ userr.profile.profile_pic.url }}">		
 			</div>
 
 			<div class="" style="position: absolute; bottom: 65px; left:245px; font-family: sans-serif, cursive; font-size: 45px; font-weight: 500; color:white;text-transform:  capitalize;">
@@ -27,8 +27,9 @@
 			</div>
 
 			<div class="btn-group" style="position:absolute; left:245px; top:350px; width:75%; height:49px; padding:2px;">
-				<a href="{% url 'editProfile' %}" class="btn" role = "button" onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'" style="background-color:transparent;"  >Profile Edit</a>
-				<a href="{% url 'change_password' %}" class="btn" role = "button"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'" style="background-color:transparent;">Change Password</a>
+				<a href="{% url 'editProfile' %}" class="btn" role = "button" onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'" style="background-color:#056;"  >Profile Edit</a>
+				<a href="{% url 'change_password' %}" class="btn" role = "button"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'" style="background-color:#056;margin-left: 10px;">Change Password</a>
+				 <i class="fas fa-map-marker-alt" style="font-size: 25px;margin-left: 90px; color: white;"></i> <div style="margin-left: 420px;color: white;margin-top: -20px;font-family: sans-serif;"> {{userr.profile.location }}</div> 
 			</div>
 
 		</div>
