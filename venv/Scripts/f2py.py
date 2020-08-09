@@ -1,4 +1,4 @@
-#!C:\Users\Sudarshan\Desktop\dprojects\covertv\covertv\myenv\Scripts\python.exe
+#!F:\My documents\Web Development projects\covertv\COVERTV-2.0\venv\Scripts\python.exe
 # See http://cens.ioc.ee/projects/f2py2e/
 from __future__ import division, print_function
 

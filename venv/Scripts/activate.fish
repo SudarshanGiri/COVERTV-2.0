@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV 'C:\Users\Sudarshan\Desktop\dprojects\covertv\covertv\myenv'
+set -gx VIRTUAL_ENV 'F:\My documents\Web Development projects\covertv\COVERTV-2.0\venv'
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | head -c 1) -lt 3

@@ -1,4 +1,4 @@
-#!C:\Users\Sudarshan\Desktop\dprojects\covertv\covertv\myenv\Scripts\python.exe
+#!F:\My documents\Web Development projects\covertv\COVERTV-2.0\venv\Scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":

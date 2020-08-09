@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"C:\Users\Sudarshan\Desktop\dprojects\covertv\covertv\myenv"
+$VIRTUAL_ENV = r"F:\My documents\Web Development projects\covertv\COVERTV-2.0\venv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='C:\Users\Sudarshan\Desktop\dprojects\covertv\covertv\myenv'
+VIRTUAL_ENV='F:\My documents\Web Development projects\covertv\COVERTV-2.0\venv'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
